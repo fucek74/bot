@@ -189,7 +189,7 @@ def web_shell_detection(update: Update, context: CallbackContext):
 # ===========================
 # Main function to start the bot
 def main():
-    updater = Updater(API_KEY, use_context=True)
+    updater = Updater(API_KEY)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
